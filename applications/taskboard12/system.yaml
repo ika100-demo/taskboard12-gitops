@@ -19,6 +19,8 @@ environments:
   dev:
     host: "{component}.{system}-dev.localhost"
     policy: "off"
+    observability:
+      ui: lgtm
   staging:
     promote: after-dev-smoke
     policy: "off"
