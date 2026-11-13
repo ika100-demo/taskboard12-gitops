@@ -1,7 +1,7 @@
 ---
 spec_id: 001-persist-tasks-in-postgres-and-manage
 title: Persist tasks in Postgres and manage them in the web UI
-status: approved
+status: done
 priority: P1
 shape: gitops-app
 ---
@@ -59,3 +59,5 @@ As a taskboard12 user, I want to create a task with a title and an optional due 
 
 - 2026-11-13 created
 - 2026-11-13 approved
+- 2026-11-13 building
+- 2026-11-13 done
