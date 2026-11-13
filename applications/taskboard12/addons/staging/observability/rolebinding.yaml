@@ -1,0 +1,16 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: otel-collector-logs
+  labels:
+    app.kubernetes.io/name: otel-collector
+    app.kubernetes.io/part-of: taskboard12
+    app.kubernetes.io/managed-by: gitops-app
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: otel-collector-logs
+subjects:
+- kind: ServiceAccount
+  name: otel-collector
+  namespace: taskboard12-staging
